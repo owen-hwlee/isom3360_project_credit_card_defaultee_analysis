@@ -57,7 +57,7 @@ In this project, we utilize 4 supervised classification models. The order of mod
   - `application_data.csv`: main dataset used
     - Not available in this repository due to large file size ([Kaggle link](https://www.kaggle.com/datasets/mishra5001/credit-card?select=application_data.csv))
   - [`columns_description.csv`](data_raw/columns_description.csv): explains the columns/features in `application_data.csv` and `previous_application.csv`
-    - ([Kaggle link](kaggle.com/datasets/mishra5001/credit-card?select=columns_description.csv))
+    - ([Kaggle link](https://www.kaggle.com/datasets/mishra5001/credit-card?select=columns_description.csv))
   - `previous_application.csv`: dataset with less features, not used in this project due to project constraints
     - Not available in this repository due to large file size ([Kaggle link](https://www.kaggle.com/datasets/mishra5001/credit-card?select=previous_application.csv))
 - [`preprocessing.ipynb`](preprocess.ipynb): performs all universal data preprocessing tasks
