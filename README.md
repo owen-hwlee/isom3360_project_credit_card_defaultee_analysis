@@ -17,8 +17,8 @@ The specific objectives are as follows:
 The credit card defaultee dataset is sourced from Kaggle at
 > https://www.kaggle.com/datasets/mishra5001/credit-card  
 
-There are $3$ files we obtain from this dataset. Due to course project restrictions, we use only the dataset in `application_data.csv` for analysis.  
-This dataset consists of $120$ feature columns (excluding ID), a complete column of data labels, and $308,000$ data instances.
+There are 3 files we obtain from this dataset. Due to course project restrictions, we use only the dataset in `application_data.csv` for analysis.  
+This dataset consists of 120 feature columns (excluding ID), a complete column of data labels, and 308,000 data instances.
 
 ## Methodology
 This project adopts classical data mining and machine learning models, specifically focusing on supervised learning as our objective is to predict potential defaultees.  
@@ -31,13 +31,13 @@ Our data preprocessing workflow is as follows:
 
 1. Explore features and characteristics of dataset
 2. Drop columns of low data quality (e.g. large amounts of empty values)
-3. Determine $k$ columns to keep in the dataset (feature selection)
-4. Perform one-hot encoding
-5. Split into training and testing sets
-6. Perform data cleaning
+3. Determine k columns to keep in the dataset (feature selection)
+4. Split into training and testing sets
+5. Perform data cleaning
    - Dealing with missing values
-7. Perform data standardization / normalization
-8. Export preprocessed data to .csv files at `data_preprocessed/`
+6. Perform one-hot encoding on categorical values
+7. Perform data standardization / normalization on continuous numerical values
+8. Export preprocessed data to .csv files at `./data_preprocessed/`
 
 ### Part 2: Models Analysis
 In this project, we utilize 4 supervised classification models. The order of model implementation and analysis is based on the sequence of teaching in ISOM3360 course syllabus.
