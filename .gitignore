@@ -1,5 +1,6 @@
 data_raw/*
 .idea/
+.DS_store
 .ipynb_checkpoints/
 !data_raw
 !data_raw/columns_description.csv
