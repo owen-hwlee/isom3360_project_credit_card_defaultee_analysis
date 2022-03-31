@@ -4,3 +4,4 @@ data_raw/*
 .ipynb_checkpoints/
 !data_raw
 !data_raw/columns_description.csv
+utils/__pycache__
