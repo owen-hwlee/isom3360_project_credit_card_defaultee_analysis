@@ -8,7 +8,7 @@ from sklearn.metrics import make_scorer
 
 # We estimate the following figures:
 # - FP: Misclassified good customer (actually does not default)
-#   - Cost: 3380
+#   - Cost: 3306
 # - FN: Misclassified bad customer (actually defaults)
 #   - Cost: 6500
 
@@ -19,11 +19,11 @@ from sklearn.metrics import make_scorer
 # According to data from JP Morgan, banks earn a profit margin of around 4.17% - 4.21% of credit card balance.
 # Annual profit per credit card user is at $273 USD.
 # We can assume this profit will go on for 15 years if it is a good credit client.
-# Taking annual discount rate at 2.5%, the present value of the profit is 3380.
-# Cost of misclassified good customer is 3380.
+# Taking annual discount rate at 2.8%, the present value of the profit is 3306.
+# Cost of misclassified good customer is 3306.
 
 cost_fp = 6500
-cost_fn = 3380
+cost_fn = 3306
 
 # custom cost function, returns financial/economic misclassification cost
 def cost(y_true, y_pred):
