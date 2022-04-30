@@ -7,4 +7,5 @@ data_raw/*
 data_preprocessed/raw2.csv
 data_preprocessed/test.csv
 data_preprocessed/train.csv
+models/decision_tree/raw_no_missing.csv
 utils/__pycache__
