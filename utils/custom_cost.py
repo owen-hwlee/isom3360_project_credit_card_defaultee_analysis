@@ -22,18 +22,18 @@ from sklearn.metrics import make_scorer
 # Taking annual discount rate at 2.8%, the present value of the profit is 3306.
 # Cost of misclassified good customer is 3306.
 
-cost_fp = 6500
-cost_fn = 3306
+cost_fp = 3306
+cost_fn = 6500
 
 # custom cost function, returns financial/economic misclassification cost
 def cost(y_true, y_pred):
     total = 0
-    for i in range(len(y_true)):
+    for i in range(y_true.shape[0]):
         # FP, true=0, pred=1
-        if y_pred[i] > y_true[i]:
+        if y_pred[i] > y_true.iloc[i,0]:
             total += cost_fp
         # FN, true=1, pred=0
-        if y_true[i] > y_pred[i]:
+        if y_true.iloc[i,0] > y_pred[i]:
             total += cost_fn
     return total
 
