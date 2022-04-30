@@ -48,8 +48,6 @@ In this project, we utilize 4 supervised classification models. The order of mod
 
 #### Part 2.3: Naive Bayes Classifier
 
-#### Part 2.4: k Nearest Neighbours Classifier
-
 
 ## Repository structure
 - [`README.md`](README.md): documentation for this course project
@@ -68,9 +66,10 @@ In this project, we utilize 4 supervised classification models. The order of mod
   - [`decision_tree.ipynb`](models/decision_tree.ipynb): Decision Tree Classifier
   - [`logistic_regression.ipynb`](models/logistic_regression.ipynb): Logistic Regression
   - [`naive_bayes.ipynb`](models/naive_bayes.ipynb): Naive Bayes Classifier
-  - [`k_nearest_neighbours.ipynb`](models/k_nearest_neighbours.ipynb): k Nearest Neighbours Classifier
 - [`utils/`](utils): directory that stores reusable codes into self-defined Python modules stored in `.py` files
   - [`analysis.py`](utils/analysis.py): contains helper functions to analyze predicted results and model performance
+  - [`constants.py`](utils/constants.py): contains constants useful for the project such as a fixed random_state to obtain reproducible results
+  - [`custom_cost.py`](utils/custom_cost.py): contains a scorer container with a custom economic cost estimation function
 
 
 ## This is the end of documentation for ISOM3360 Group Project.
