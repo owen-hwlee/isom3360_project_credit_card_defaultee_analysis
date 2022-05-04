@@ -39,6 +39,15 @@ def cost(y_true, y_pred):
 
 # customer scorer object, to be imported for use during cross validation
 custom_loss = make_scorer(cost, greater_is_better=False)
+# !!!!!!!!!!!!!!!!!!!! THIS SHOULD ACTUALLY NOT BE USED FOR CROSS VALIDATION
+# !!!!!!!!!!!!!!!!!!!! COST ANALYSIS SHOULD ONLY BE USED TO FIND DECISION THRESHOLD
+
+# economic cost analysis function, returns economic cost
+def economic_analysis(y_true, y_pred_proba, threshold=0.5):
+    y_pred = (y_pred_proba[:, 1] >= threshold).astype(int)
+    econ_cost = cost(y_true, y_pred)
+    print("The estimated economic cost at decision threshold {0:.3f} = ${1}".format(threshold, econ_cost))
+    return econ_cost
 
 
 
