@@ -9,3 +9,5 @@ data_preprocessed/test.csv
 data_preprocessed/train.csv
 models/decision_tree/raw_no_missing.csv
 utils/__pycache__
+models/raw_no_missingNB.csv
+data_preprocessed/raw2nb.csv
